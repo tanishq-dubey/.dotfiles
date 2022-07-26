@@ -1,5 +1,9 @@
 # Dubey Dotfiles
 
+<p align="center">
+  <img src="https://i.imgur.com/YmIuK2r.png">
+</p>
+
 ## Apps configured
  - git
  - neovim
