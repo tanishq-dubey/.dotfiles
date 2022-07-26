@@ -1,8 +1,8 @@
 fortune | cowsay
-
-cd /home/tdubey/fleet >> /dev/null && source .envrc >> /dev/null && cd -
-
+[ -d "/home/tdubey/fleet" ] && cd /home/tdubey/fleet >> /dev/null && source .envrc >> /dev/null && cd -
 export GPG_TTY=$(tty)
+export PATH="$HOME/.fleetcli/bin:$PATH"
+source <(kubectl completion zsh)
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -148,4 +148,3 @@ export PATH="$HOME/.tgenv/bin:$PATH"
 
 autoload -U compinit; compinit
 
-export PATH="$HOME/.fleetcli/bin:$PATH"

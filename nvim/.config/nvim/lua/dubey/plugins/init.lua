@@ -126,6 +126,14 @@ return packer.startup(function(use)
   use("lifepillar/vim-gruvbox8") -- Another theme I like
 
   use("github/copilot.vim") -- Something that will obslete my job one day
+  use("cappyzawa/starlark.vim") -- starlark syntax support
+  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' } -- pywal theme
+  use({
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+    end,
+  }) -- better virtual diagnostics
 
   if bootstrap then
 		require("packer").sync()

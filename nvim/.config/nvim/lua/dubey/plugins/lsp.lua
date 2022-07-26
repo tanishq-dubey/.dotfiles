@@ -56,7 +56,7 @@ local signs = {
 }
 
 local config = {
-	virtual_text = true,
+  virtual_text = false,
 	signs = {
 		active = signs,
 	},
@@ -108,3 +108,5 @@ end
 null_ls.setup({
 	on_attach = on_attach,
 })
+
+require("lsp_lines").setup() -- Turn on LSP lines
